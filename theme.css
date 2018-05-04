@@ -1,0 +1,270 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    background-color: #E1E2E1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    display: flex;
+}
+
+header div {
+    width: 33.33%;
+    flex-shrink: 1;
+}
+
+.site-logo img {
+    max-height: 53px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.basic-info {
+    flex-shrink: 0;
+    width: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.basic-info h1 {
+    margin: 0px;
+}
+
+.basic-info p {
+    margin: 0px;
+    text-align: center;
+}
+
+.nav {
+    margin: auto;
+    margin-right: 0px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.nav span {
+    cursor: pointer;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav span:hover {
+    border-bottom: 1px solid #000;
+}
+
+.toggle-nav {
+    display: none;
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.row h2 {
+    padding: 20px;
+}
+
+.row hr {
+    height: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-grow: 1;
+    border-bottom: none;
+    border-left: none;
+}
+
+.banner {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+}
+
+#featured-container {
+    display: flex;
+}
+
+.project-f {
+    flex-wrap: wrap;
+    flex: 1;
+    display: flex;
+    margin-right: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #9a9a9a;
+    border-radius: 5px;
+    border: 1px solid #9a9a9a;
+}
+
+.project-f:last-child {
+    margin: 0px;
+}
+
+.thumbnail {
+    height: inherit;
+}
+
+.thumbnail img {
+    max-height: 100%;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.project-info {
+    padding: 10px;
+    width: 100%;
+}
+
+.project-info p {
+    text-align: center;
+}
+
+.pro-name {
+    display: flex;
+    margin: 0px;
+    border-bottom: 1px solid #9a9a9a;
+    padding: 10px;
+}
+
+.pro-name a {
+    flex: 1;
+    text-align: right;
+}
+
+footer {
+    padding-bottom: 10px;
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+}
+
+.info-links a {
+    text-decoration: none;
+}
+
+.info-links i {
+    color: black;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-left: 20px
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+    #featured-container {
+        display: block;
+    }
+    
+    .project-f {
+        height: 200px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    
+    .project-f:last-child {
+        margin-top: 20px;
+    }
+    
+    .project-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-info p {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .thumbnail {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 850px) {    
+    .nav {
+        display: none;
+        position: absolute;
+        right: 0px;
+        margin-top: 50px;
+        width: 200px;
+        text-align: center;
+        background-color: #eee;
+        border: 1px solid;
+    }
+    
+    .nav span {
+        display: block;
+        width: initial;
+        border-bottom: 1px solid;
+        padding: 20px;
+        margin: unset;
+    }
+    
+    .nav span:last-child {
+        border: none;
+    }
+    
+    .openNav  {
+        display: block;
+    }
+    
+    .toggle-nav {
+        margin: auto;
+        margin-right: 0px;
+        text-align: right;
+        display: block;
+        cursor: pointer;
+    }
+    
+    #featured-container {
+        display: block;
+    }
+    
+    .project-f {
+        margin-top: 20px;
+    }
+    
+    .project-f:last-child {
+        margin-right: 1em;
+        margin-top: 20px;
+    }    
+
+    .pro-name {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    
+    .banner {
+        height: 150px;
+    }
+            
+    .basic-info {
+        display: none;
+    }
+}
