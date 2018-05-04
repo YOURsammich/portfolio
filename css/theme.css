@@ -98,7 +98,6 @@ header div {
     overflow: hidden;
     height: 300px;
     width: 100%;
-    display: block;
 }
 
 .banner img {
@@ -174,7 +173,7 @@ footer {
 
 @media screen and (min-width: 850px) and (max-width: 1200px) {
     #featured-container {
-        display: block;
+        flex-direction: column;
     }
     
     .project-f {
@@ -216,11 +215,11 @@ footer {
     }
     
     .nav span {
-        display: block;
-        width: initial;
+        display: flex;
         border-bottom: 1px solid;
         padding: 20px;
         margin: unset;
+        justify-content: center;
     }
     
     .nav span:last-child {
@@ -228,19 +227,26 @@ footer {
     }
     
     .openNav  {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     
     .toggle-nav {
         margin: auto;
         margin-right: 0px;
         text-align: right;
-        display: block;
+        display: flex;
         cursor: pointer;
     }
     
+    .toggle-nav .fas {
+        justify-content: space-between;
+        display: flex;
+        margin-left: auto;
+    }
+    
     #featured-container {
-        display: block;
+        flex-direction: column;
     }
     
     .project-f {
